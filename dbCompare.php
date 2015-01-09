@@ -32,8 +32,6 @@ class dbCompare {
 			foreach ($row as $key => $vals){
 				if (count($vals)>1){
 					if (!self::_array_same_values($vals)){
-						echo $row_id.':'.$key.PHP_EOL;
-						print_r($vals);
 						foreach ($vals as $db_name => $val){
 							$diff_as_table[$row_id][$key.'-'.$db_name]=$val;
 						}
@@ -44,6 +42,11 @@ class dbCompare {
 					$new_rows[$row_id]=true;
 				}
 			}
+		}
+		foreach ($diff_as_table as $row_id => $row){
+			$row = array_reverse($row, true); 
+		    $row[$primary_key] = $row_id; 
+		    $diff_as_table[$row_id]=array_reverse($row, true); 
 		}
 		return ['table'=>$diff_as_table,'array'=>$diff_as_array,'new'=>$new_rows];
 	}
