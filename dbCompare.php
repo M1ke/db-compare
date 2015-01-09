@@ -28,6 +28,7 @@ class dbCompare {
 			}
 		}
 
+		$diff_as_table=$diff_as_array=$new_rows=[];
 		foreach ($key_items as $row_id => $row){
 			foreach ($row as $key => $vals){
 				if (count($vals)>1){
