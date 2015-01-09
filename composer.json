@@ -1,0 +1,15 @@
+{
+    "name": "m1ke/db-compare",
+    "authors": [
+        {
+            "name": "m1ke",
+            "email": "mike@m1ke.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "classmap": ["dbCompare.php"]
+    }
+}

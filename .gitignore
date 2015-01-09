@@ -1,0 +1,4 @@
+_*
+*.csv
+vendor/
+composer.phar
