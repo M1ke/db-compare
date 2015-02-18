@@ -1,13 +1,13 @@
 <?php
 require __DIR__.'/vendor/autoload.php';
 
-require __DIR__.'/dbCompare.php';
+require __DIR__.'/DbCompare.php';
 
 define('SQL_SERVER','localhost');
 define('SQL_USER','root');
 define('SQL_PASS','');
 
-$db_compare=new dbCompare(SQL_SERVER,SQL_USER,SQL_PASS);
+$db_compare=new DbCompare(SQL_SERVER,SQL_USER,SQL_PASS);
 $db_compare->addDb('db_1')->addDb('db_2');
 
 $output=$db_compare->compare('table',['key1','key2'],'primary_key');

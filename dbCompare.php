@@ -1,5 +1,5 @@
 <?php
-class dbCompare {
+class DbCompare {
 	protected $sql_server;
 	protected $sql_user;
 	protected $sql_pass;
