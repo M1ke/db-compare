@@ -4,7 +4,7 @@ A simple PHP interface to compare the same table in two versions of a database.
 
 ### Install
 
-You can install Worldpay with [Composer](http://getcomposer.org). Add the following to the `require` key of your `composer.json` file:
+You can install Database Compare with [Composer](http://getcomposer.org). Add the following to the `require` key of your `composer.json` file:
 
     "m1ke/db-compare": "dev-master"
 
