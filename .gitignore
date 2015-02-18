@@ -2,3 +2,4 @@ _*
 *.csv
 vendor/
 composer.phar
+.phpintel
